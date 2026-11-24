@@ -1,5 +1,9 @@
 # 桌面錄影室（Screen Recorder）
 
+[![下載 Recorder.exe](https://img.shields.io/badge/%E4%B8%8B%E8%BC%89-Recorder.exe%20(Windows%20x64)-0078D4?style=for-the-badge&logo=windows)](https://github.com/willy15662/screen-recorder/releases/latest/download/Recorder.exe)
+
+> 免安裝單一執行檔（Windows 10／11 x64）｜[查看所有版本與 SHA-256 校驗碼](https://github.com/willy15662/screen-recorder/releases)
+
 Windows 10／11 x64 的本機錄影與截圖工具。雙擊 `Recorder.exe` 即可開啟置頂的「桌面錄影小工具」。需要錄製單一視窗或分頁、混合音訊或加入攝影機畫面時，可從小工具切換至「進階工作室」。兩種模式都能離線使用，錄影與截圖直接儲存在本機，無須上傳雲端。
 
 ## 快速開始
