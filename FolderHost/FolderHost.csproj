@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName Condition="'$(AssemblyName)' == ''">FolderHost</AssemblyName>
+    <Deterministic>true</Deterministic>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\index.html" LogicalName="web/index.html" />
+    <EmbeddedResource Include="..\studio.css" LogicalName="web/studio.css" />
+    <EmbeddedResource Include="..\mp4.js" LogicalName="web/mp4.js" />
+    <EmbeddedResource Include="..\storage.js" LogicalName="web/storage.js" />
+    <EmbeddedResource Include="..\folders.js" LogicalName="web/folders.js" />
+    <EmbeddedResource Include="..\recorder.js" LogicalName="web/recorder.js" />
+    <EmbeddedResource Include="..\studio.js" LogicalName="web/studio.js" />
+    <EmbeddedResource Include="..\vendor\mediabunny-1.29.1.js" LogicalName="web/vendor/mediabunny-1.29.1.js" />
+    <Content Include="obj\DesktopEncoder.dll" Condition="Exists('obj\DesktopEncoder.dll')">
+      <Link>DesktopEncoder.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
